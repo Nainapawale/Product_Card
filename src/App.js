@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Product from "././Components/Product";
+import Countdown from "././Components/Countdown";
+import ImageGallery from "././Components/ImageGallery";
 
-function App() {
+const App = () => {
+  const headingStyle = {
+    textAlign: "center",
+    padding: "20px",
+    backgroundColor: "#f4f4f4",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 style={headingStyle}>Product Card</h1>
+
+      <Product />
+      <Countdown />
+
+      <ImageGallery />
     </div>
   );
-}
+};
 
 export default App;
